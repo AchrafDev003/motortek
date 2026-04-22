@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import Catalog from './pages/Catalog';
 import CarDetails from './pages/CarDetails';
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 function RouteShell({ children }) {
   return (
@@ -24,7 +25,9 @@ export default function App() {
   const location = useLocation();
 
   return (
+    
     <div className="min-h-screen bg-canvas text-text-primary">
+      <ScrollToTop />
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

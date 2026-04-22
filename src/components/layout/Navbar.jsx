@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import useScrolled from '../../hooks/useScrolled';
 import Button from '../ui/Button';
 import Container from '../ui/Container';
+import logo from "../../assets/logo.png";
 
 const navLinkClass = ({ isActive }) =>
   `text-sm font-medium transition ${isActive ? 'text-text-primary' : 'text-text-secondary hover:text-text-primary'}`;
@@ -28,9 +29,11 @@ export default function Navbar() {
     >
       <Container className="flex h-20 items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand text-slate-950 shadow-glass">
-            <ShieldCheck className="h-5 w-5" />
-          </div>
+          <img
+  src={logo}
+  alt="MotorTek logo"
+  className="h-11 w-auto object-contain"
+/>
           <div>
             <p className="text-sm font-black uppercase tracking-[0.24em] text-text-secondary">MotorTek</p>
             <p className="text-xs text-text-secondary">Coches premium de ocasion en Espana</p>

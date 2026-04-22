@@ -8,6 +8,7 @@ import SearchBar from '../components/filters/SearchBar';
 import GlassCard from '../components/ui/GlassCard';
 import { useInventory } from '../context/InventoryContext';
 import ImmersiveCarousel from '../components/car/ImmersiveCarousel';
+import heroImage from '../assets/mercedes2.jpg';
 
 const benefits = [
   {
@@ -40,7 +41,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1800&q=80"
+            src={heroImage}
             alt="Premium dealership hero"
             className="h-full w-full object-cover opacity-35"
           />

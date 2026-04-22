@@ -10,6 +10,7 @@ import CarGallery from '../components/car/CarGallery';
 import CarSpecs from '../components/car/CarSpecs';
 import { useInventory } from '../context/InventoryContext';
 
+
 function formatPrice(price) {
   return new Intl.NumberFormat('es-ES', {
     style: 'currency',
@@ -203,17 +204,26 @@ export default function CarDetails() {
               <Reveal key={item.id} delay={index * 0.05}>
                 <Link to={`/cars/${item.id}`}>
                   <GlassCard className="overflow-hidden">
-                    <img src={item.image} alt={item.model} className="h-48 w-full object-cover" loading="lazy" />
-                    <div className="p-5">
-                      <p className="text-sm font-semibold text-brand">{formatPrice(item.price)}</p>
-                      <h3 className="mt-1 text-lg font-bold text-text-primary">
-                        {item.brand} {item.model}
-                      </h3>
-                      <p className="mt-1 text-sm text-text-secondary">
-                        {item.year} • {formatKm(item.km)} km
-                      </p>
-                    </div>
-                  </GlassCard>
+  <div className="h-48 max-h-48 overflow-y-auto border border-white/10">
+  <img
+    src={item.image}
+    alt={item.model}
+    className="w-full"
+  />
+</div>
+
+  <div className="p-5">
+    <p className="text-sm font-semibold text-brand">
+      {formatPrice(item.price)}
+    </p>
+    <h3 className="mt-1 text-lg font-bold text-text-primary">
+      {item.brand} {item.model}
+    </h3>
+    <p className="mt-1 text-sm text-text-secondary">
+      {item.year} • {formatKm(item.km)} km
+    </p>
+  </div>
+</GlassCard>
                 </Link>
               </Reveal>
             ))}

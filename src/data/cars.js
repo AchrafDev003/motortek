@@ -1,3 +1,23 @@
+// Local-only images (no external URLs)
+import kuga1 from '../assets/kuga (1).png';
+import kuga2 from '../assets/kuga (2).png';
+import kuga3 from '../assets/kuga (3).png';
+import kuga4 from '../assets/kuga (4).png';
+import leon1 from '../assets/leon (1).png';
+import leon2 from '../assets/leon (2).png';
+import leon3 from '../assets/leon (3).png';
+import mercedesMain from '../assets/mercedes.jpg';
+import mercedes1 from '../assets/mercedes1.jpg';
+import mercedes2 from '../assets/mercedes2.jpg';
+import miniMain from '../assets/mini.jpg';
+import mini1 from '../assets/mini1.jpg';
+import mini2 from '../assets/mini2.jpg';
+import mini3 from '../assets/mini3.jpg';
+import puma1 from '../assets/puma (1).png';
+import puma2 from '../assets/puma (2).png';
+import puma3 from '../assets/puma (3).png';
+import puma4 from '../assets/puma (4).png';
+
 export const cars = [
   {
     id: 'bmw-x3-2022',
@@ -16,13 +36,8 @@ export const cars = [
     description:
       'Un SUV premium refinado con la seguridad del xDrive, rendimiento diésel eficiente y un habitáculo tecnológico ideal para ciudad y viajes largos.',
     features: ['Navegación Pro', 'Asientos de cuero', 'Asistente de aparcamiento', 'Apple CarPlay'],
-    image:
-      'https://images.unsplash.com/photo-1556800572-1b8aeef2c54d?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1556800572-1b8aeef2c54d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1549399542-7e8f5f5f5f8e?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: kuga1,
+    gallery: [kuga1, kuga2, kuga3],
   },
   {
     id: 'audi-a4-2021',
@@ -41,13 +56,8 @@ export const cars = [
     description:
       'Un familiar ejecutivo equilibrado, con diseño afilado, materiales premium y un maletero práctico para familia o trabajo.',
     features: ['Virtual Cockpit', 'Faros Matrix LED', 'Carga inalámbrica', 'Cámara trasera'],
-    image:
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: leon1,
+    gallery: [leon1, leon2, leon3],
   },
   {
     id: 'mercedes-c300-2023',
@@ -66,13 +76,8 @@ export const cars = [
     description:
       'Una berlina híbrida enchufable con gran autonomía eléctrica, proporciones elegantes y un interior con sensación claramente premium.',
     features: ['Iluminación ambiental', 'MBUX', 'Control de crucero adaptativo', 'Asientos con memoria'],
-    image:
-      'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: mercedesMain,
+    gallery: [mercedesMain, mercedes1, mercedes2],
   },
   {
     id: 'volvo-xc60-2022',
@@ -91,13 +96,8 @@ export const cars = [
     description:
       'Un SUV escandinavo elegante con tecnología de seguridad de alto nivel, materiales envolventes y un sistema híbrido enchufable muy suave.',
     features: ['Pilot Assist', 'Techo panorámico', 'Harman Kardon', 'Asientos calefactables'],
-    image:
-      'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1514516870926-20598933bd15?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: puma1,
+    gallery: [puma1, puma2, puma3],
   },
   {
     id: 'toyota-corolla-2024',
@@ -116,13 +116,8 @@ export const cars = [
     description:
       'Un familiar híbrido casi nuevo con eficiencia excepcional, costes de uso bajos y la fiabilidad que caracteriza a Toyota.',
     features: ['Toyota Safety Sense', 'Entrada sin llave', 'Asistente de carril', 'Volante calefactable'],
-    image:
-      'https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: miniMain,
+    gallery: [miniMain, mini1, mini2],
   },
   {
     id: 'cupra-formentor-2023',
@@ -141,13 +136,8 @@ export const cars = [
     description:
       'Un crossover deportivo con presencia contundente, una conducción precisa y un carácter de rendimiento muy español.',
     features: ['Cockpit digital', 'Asientos deportivos', 'Selector de modos de conducción', 'Iluminación LED'],
-    image:
-      'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: leon2,
+    gallery: [leon2, leon3, puma4],
   },
   {
     id: 'tesla-model3-2021',
@@ -166,13 +156,8 @@ export const cars = [
     description:
       'Un eléctrico de gran autonomía con aceleración instantánea, un diseño interior minimalista y un ecosistema de carga excelente para el día a día.',
     features: ['Autopilot', 'Techo de cristal', 'Audio premium', 'Actualizaciones OTA'],
-    image:
-      'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1556800572-1b8aeef2c54d?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: kuga4,
+    gallery: [kuga4, puma2, mini3],
   },
   {
     id: 'vw-tiguan-2020',
@@ -191,13 +176,8 @@ export const cars = [
     description:
       'Un SUV familiar versátil con habitáculo amplio, buena presencia en carretera y un equipamiento práctico muy acertado.',
     features: ['Cockpit digital', 'Paquete de remolque', 'Front Assist', 'Portón eléctrico'],
-    image:
-      'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1549399542-7e8f5f5f5f8e?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: puma3,
+    gallery: [puma3, puma4, kuga2],
   },
   {
     id: 'peugeot-3008-2021',
@@ -216,13 +196,8 @@ export const cars = [
     description:
       'Un SUV francés con estilo, un puesto de conducción premium, rendimiento híbrido y un coste de propiedad muy atractivo.',
     features: ['i-Cockpit', 'Cámara 360', 'Asientos calefactables', 'Apple CarPlay inalámbrico'],
-    image:
-      'https://images.unsplash.com/photo-1571607388263-1044f9ea01dd?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1571607388263-1044f9ea01dd?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1543688155-1d1e8d0f0d75?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: kuga3,
+    gallery: [kuga3, kuga1, puma1],
   },
   {
     id: 'lexus-nx-2022',
@@ -241,13 +216,8 @@ export const cars = [
     description:
       'Un SUV híbrido de lujo que combina artesanía japonesa, gran refinamiento y una propiedad muy tranquila.',
     features: ['Audio Mark Levinson', 'Habitáculo ambiental', 'Acabados en cuero', 'Faros adaptativos'],
-    image:
-      'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: mercedes2,
+    gallery: [mercedes2, mini2, leon1],
   },
   {
     id: 'audi-q5-2024',
@@ -266,12 +236,7 @@ export const cars = [
     description:
       'Un SUV híbrido enchufable insignia con infoentretenimiento de última generación, confort premium y estado casi nuevo.',
     features: ['Bang & Olufsen', 'Faros Matrix LED', 'Suspensión adaptativa', 'Virtual cockpit plus'],
-    image:
-      'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: leon3,
+    gallery: [leon3, leon2, puma2],
   },
 ];
